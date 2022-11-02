@@ -7,7 +7,7 @@ body{
     margin:0 auto;
     height: 100%;
     line-height: 1.5;
-    max-width: 1280px;
+    max-width: 100%;
     }
 
 
@@ -18,10 +18,13 @@ body{
 }
 
 .top ul{
-    display: inline-flex;
+    display: flex;
+    margin: 0 auto;
     margin-top: 14px;
-    padding-left: 80px;
+    padding-left: -25px;
     text-align: center;
+    justify-content: center;
+    margin-right: 116px;
    }
 
 .top img{
@@ -63,17 +66,19 @@ body{
 
 h1{
     margin: 30px;
-    margin-left: 155px;
+    margin-left: -708px;
     color: rgb(172 125 125);
+    text-align: center;
 }
 
 .shop{
-    align-items: center;
-    background-color:rgb(215 212 175 / 23%);
+    display: block;
+    background-color: rgb(215 212 175 / 23%);
     width: 659px;
     height: 290px;
     margin-left: 152px;
     position: relative;
+    margin: 0 767px;
 }
 
 .item_header{
@@ -183,11 +188,11 @@ margin-right: -86px;
 /* 會員資料區 */
 .check{
     width: 1009px;
-    height: 380px;
+    height: auto;
     background-color: rgb(215 212 175 / 23%);
     display: flex;
-    margin-left: 152px;
-    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 29px;
 }
 
 .check .data{
