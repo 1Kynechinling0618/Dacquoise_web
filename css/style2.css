@@ -7,7 +7,7 @@ body{
     margin:0 auto;
     height: 100%;
     line-height: 1.5;
-    max-width: 1280px;
+    max-width: 100%;
     }
 
 
@@ -15,15 +15,16 @@ body{
 .top{
     height: 210px;
     background-color: rgba(102, 102, 167, 0.954);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .top ul{
-    display: inline-flex;
+    display: flex;
+    margin: 0 auto;
     margin-top: 14px;
-    padding-left: 80px;
+    padding-left: -25px;
     text-align: center;
+    justify-content: center;
+    margin-right: 116px;
    }
 
 .top img{
@@ -67,6 +68,8 @@ body{
     max-width: 1280px;
     height: auto;
     text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .about img:first-child{
