@@ -193,6 +193,7 @@ margin-right: -86px;
     display: flex;
     margin: 0 auto;
     margin-top: 29px;
+    padding-bottom: 15px;
 }
 
 .check .data{
@@ -273,7 +274,6 @@ input.facebook {
 input.ing {
     width: 150px;
     height: 22px;
-    margin-top: -5px;
     border: none;
     background-color: rgba(232, 172, 183, 0.829);
     color: rgba(52, 52, 44, 0.664);
@@ -282,7 +282,6 @@ input.ing {
 input.line {
     width: 150px;
     height: 22px;
-    margin-top: -9px;
     border: none;
     background-color: rgba(162, 218, 152, 0.575);
     color: rgba(52, 52, 44, 0.664);
