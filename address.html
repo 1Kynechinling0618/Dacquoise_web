@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Jost:wght@300&family=Noto+Sans+TC&family=Noto+Serif+HK:wght@300&family=Noto+Serif+TC&family=Prata&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/address.css">
     <title>Dacquoise</title>
 </head>
 <body>
     <!-- 頭 -->
     <header class="top">
-        <!-- <i class="fa fa-bars" style="font-size:36px"></i> -->
-        <img src="main _img/logologo.png" alt="">
+        <i class="bi bi-list" style="font-size: 20px;"></i>
+        <a href="index.html"><img src="main_img/logologo.png" alt=""></a>
         <ul>
             <li><a href="index.html">首頁</a></li>
             <li><a href="about.html">關於我們</a></li>
@@ -25,22 +26,31 @@
     </header>
    
 <nav>
-    <ul class="address">
-        <li><img src="address_img/shop2.jpg" alt=""></li>
-        <li><img src="address_img/shop1.jpg" alt=""></li>
-    </ul>
+    <div class="address">
+            <a href="#" class = 'left_jiantou'><i class="bi bi-caret-left"></i></a>
+            <a href="#" class = 'right_jiantou'><i class="bi bi-caret-right"></i></a>
+        <ul>
+            <li style="background-image: url(address_img/shop3.jpg)"></li>
+            <li style="background-image: url(address_img/shop1.jpg);"></li> 
+            <li style="background-image: url(address_img/shop2.jpg);"></li>
+            <li style="background-image: url(address_img/shop5.jpg);"></li>
+            <li style="background-image: url(address_img/shop4.jpg)"></li>
+        </ul> 
+    </div>
 
     <main class="stone">
         <ul>
             <li>
+                <h1>店舖據點</h1>
                 <p>青島總店:台北市中山區南京東路三段219號</p>
                 <p>聯絡電話:02-1234-5678</p>
                 <p>營業時間:13:00至20:30</p>
             </li>
             <li>
-                <img src="address_img/🦆 icon _Instagram_ing.icon.png" alt="">
-                <img src="address_img/🦆 icon _Facebook_fb.icon.png" alt="">
-                <img src="address_img/🦆 emoji _Twitter_tw.icon.png" alt="">
+                <h1>關注我們</h1>                
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/anime_shingeki"><i class="bi bi-twitter"></i></a>
             </li>
         </ul>
 
@@ -55,5 +65,55 @@
         <p>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。參考資源:
             yokumoku。若有侵權疑慮，您可以私訊[緯育TibaMe]，後續會由專人協助處理</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+    jQuery(document).ready(function ($) {
+
+    var slideCount = $('.address ul li').length;
+    var slideWidth = $('.address ul li').width();
+    var slideHeight = $('.address ul li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+  
+     $('.address').css({ width: slideWidth, height: slideHeight });
+  
+    $('.addressul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+    $('.address ul li:last-child').prependTo('.address ul');
+
+    function moveLeft() {
+      $('.address ul').animate({
+        left: + slideWidth
+            }, 200, function () {
+                $('.address ul li:last-child').prependTo('.address ul');
+                $('.address ul').css('left', '');
+      });
+  };
+
+    function moveRight() {
+      $('.address ul').animate({
+        left: - slideWidth
+            }, 200, function () {
+                $('.address ul li:first-child').appendTo('.address ul');
+                $('.address ul').css('left', '');
+      });
+  };
+
+    $('a.left_jiantou').click(function () {
+      moveLeft();
+    });
+
+    $('a.right_jiantou').click(function () {
+      moveRight();
+     });
+
+});    
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>

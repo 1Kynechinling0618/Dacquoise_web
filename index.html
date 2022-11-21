@@ -3,80 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Homemade+Apple&family=Noto+Sans+TC&family=Prata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexrwd.css">
     <title>Dacquoise</title>
 </head>
 <body>
     <!-- 頭 -->
-    <header class="top">
-       <img src="main _img/logologo.png" alt="">
-        <i class="fa fa-bars" style="font-size:36px"></i>
-        <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="about.html">關於我們</a></li>
-            <li><a href="menu.html">商品列表</a></li>
-            <li><a href="shopping.html">購物車</a></li>
-            <li><a href="address.html">店舖資訊</a></li>
-        </ul>
+    <header> 
+        <div class="top">
+            <a href="index.html"><img src="main_img/logologo.png" alt=""></a>
+            <i class="bi bi-list" style="font-size: 20px;"></i>
+
+            <div class="circle">
+            <a href="#"><i class="bi bi-cart-plus-fill"></i></a>
+            <a href="#"><i class="bi bi-person-circle"></i></a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="menu.html">商品列表</a></li>
+                <li><a href="shopping.html">購物車</a></li>
+                <li><a href="address.html">店舖資訊</a></li>
+            </ul>
+        </div>
     </header>
-    <article class="full">
+        <div class="rwdtext">
+            <h1>Dacquoise</h1>
+            <h2>源自於法國的蛋糕體由日本職人改造研發如和菓子般精緻細膩的高級甜點</h2>
+        </div>
     <!--輪播圖 -->
-        <section class="wrapper">
-        <img src="round_img/roundimg3.jpg" alt="">
-        <img src="round_img/roundimg1.jpg" alt="">
-        <img src="round_img/roundimg2.png" alt="">
-        <img src="round_img/roundimg4.jpg" alt="">
-    </section>
-        
-    </ul>
-     <!--中間介紹區 -->
-        <nav class="main">
-        <h1>Dacquoise手工達克瓦茲</h1>
+    <div class="box">
+            <a href="#" class = 'left_jiantou'><i class="bi bi-caret-left"></i></a>
+            <a href="#" class = 'right_jiantou'><i class="bi bi-caret-right"></i></a>
         <ul>
-            <li>
-                <h2>Dacquoise</h2>
-                <p>源自於法國的蛋糕體<br>
-                    由日本職人改造研發<br>
-                    如和菓子般精緻細膩的<br>
-                    高級甜點</p>
-            </li>
-
-            <li>
-                每一個達克瓦茲的製作<br>
-                都是職人的嚴致堅持<br>
-                從精選食材開始<br>
-                用心斟搭配<br>
-                上千萬次蛋白打發<br>
-                拌合食材的力道拿捏<br>
-                糖粉灑落的鋪陳<br>
-                火候時時的輕重判斷<br>
-                顆顆珍珠般的結晶在烘焙時綻現<br>
-                為能夠純粹品味達克瓦茲的獨特風味<br>
-            </li>
-
-            <li>
-                <h2>嚴選食材</h2>
-                <p>使用法國高級奶油製作<br>
-                    日本進口三盆糖<br>
-                    與在地農場合作<br>
-                    有機時令水果<br>  
-                    呈現食材自身的風味</p>
-            </li>
-        </ul>
+            <li style="background-image: url(round_img/roundimg4.jpg)"></li>
+            <li style="background-image: url(round_img/roundimg3.jpg);"></li> 
+            <li style="background-image: url(round_img/roundimg1.jpg);"></li>
+            <li style="background-image: url(round_img/roundimg2.jpg);"></li>
+            <li style="background-image: url(round_img/roundimg5.jpg)"></li>
+        </ul> 
         
-        <nav class="last">
-            <img src="main _img/Mask group1.png" alt="" class="item1">
-            <img src="main _img/Mask group2.png" alt="" class="item2">
-            <img src="main _img/Mask group3.png" alt="" class="item3">
-            <img src="main _img/Mask group4.png" alt="" class="item4">
-            <img src="main _img/Mask group5.png" alt="" class="item5">
-        </nav>
-        </nav>
-    </article>
+    </div>
+ 
+     <!--中間介紹區 -->
+    <div class="main">
+                <h1>Dreamer</h1>
+                <p> 每一個達克瓦茲的製作
+                    都是職人的嚴致堅持
+                    從精選食材開始
+                    用心斟搭配
+                    上千萬次蛋白打發
+                    拌合食材的力道捏
+                    糖粉灑落的鋪陳
+                    火候時時的輕重判斷
+                    顆顆珍珠般的結晶在烘焙時綻現
+                    為能夠純粹品味達克瓦茲的獨特風味</p>
+        <div class="show">
+            <ul class="title">
+                <li class="cake"></li>
+        
+                <li>
+                    <h1>Dacquoise</h1>
+                    <h2>源自於法國的蛋糕體由日本職人改造研發如和菓子般精緻細膩的高級甜點</h2>
+                </li>
+            </ul>
+            <h1>嚴選食材</h1>
+
+            <ul class="introduce">
+                
+                <li class="butter"></li>
+        
+                <li class="butter_text">
+                    <h1>法國高級奶油</h1>
+                    <h3>來自法國的頂級奶油品牌一直以來都是許多知名烘焙坊與高級餐廳選擇的食材之一。法國奶油的味道飽滿柔緻、奶味香濃</h3>
+                </li>
+            </ul>
+
+            <ul class="introduce2">
+                
+                <li class="sugar"></li>
+        
+                <li class="sugar_text">
+                    <h1>日本進口三盆糖</h1>
+                    <h3>不同於一般砂糖，以特別的手工製糖法製作。成品顆粒非常細緻，色澤為淡黃偏白色，入口即化、風味甘醇而雅緻，因為做工繁複、產量有限而相當珍貴</h3>
+                </li>
+            </ul>
+
+            <ul class="introduce3">
+                
+                <li class="fruit"></li>
+        
+                <li class="fruit_text">
+                    <h1>有機時令水果</h1>
+                    <h3>與在地各個地方農場合作，北部中部南部，各地使用有機栽培農作物，依據季節推出不同時令水果，呈現食材自身的風味</h3>
+                </li>
+            </ul>
+        </div>
+            
+        
+        
+    </div> 
+    
 
 
     <!-- 尾 -->
@@ -85,5 +122,58 @@
         <p>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。參考資源:
             yokumoku。若有侵權疑慮，您可以私訊[緯育TibaMe]，後續會由專人協助處理</p>
     </footer>
+    <!-- owl.carousel -->
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+    jQuery(document).ready(function ($) {
+
+    var slideCount = $('.box ul li').length;
+    var slideWidth = $('.box ul li').width();
+    var slideHeight = $('.box ul li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+  
+     $('.box').css({ width: slideWidth, height: slideHeight });
+  
+    $('.box ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+    $('.box ul li:last-child').prependTo('.box ul');
+
+    function moveLeft() {
+      $('.box ul').animate({
+        left: + slideWidth
+            }, 200, function () {
+                $('.box ul li:last-child').prependTo('.box ul');
+                $('.box ul').css('left', '');
+      });
+  };
+
+    function moveRight() {
+      $('.box ul').animate({
+        left: - slideWidth
+            }, 200, function () {
+                $('.box ul li:first-child').appendTo('.box ul');
+                $('.box ul').css('left', '');
+      });
+  };
+
+    $('a.left_jiantou').click(function () {
+      moveLeft();
+    });
+
+    $('a.right_jiantou').click(function () {
+      moveRight();
+     });
+
+});    
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>

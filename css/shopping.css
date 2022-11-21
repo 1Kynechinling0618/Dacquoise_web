@@ -1,0 +1,367 @@
+@import url('reset.css');
+
+body{
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Noto Serif TC', serif;
+    display: block;
+    margin:0 auto;
+    height: 100%;
+    line-height: 1.5;
+    max-width: 100%;
+    }
+
+
+/* 頭 */
+.top{
+    height: 210px;
+    background-color: rgba(102, 102, 167, 0.954);
+}
+
+.top ul{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 97px;
+    margin-top: 15px;
+   }
+
+.top img{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+
+}
+
+.top i{
+    display: none;
+}
+.top li{
+    flex-shrink: 0;
+    font-weight: 20px;
+    flex-basis: 198px;
+    box-sizing: border-box;
+}
+
+.top li a{
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.top ul a:hover:after {
+    position: relative;
+    content: "";
+    background-color:rgba(252, 252, 252, 0.96) ;
+    display: block;
+    height: 3.2px;
+    width: 50px;
+    margin: 0 auto;
+    left: -7px;
+    border-radius: 18px;
+}
+
+/*購物進度 */
+.list{
+    display: flex;
+    margin: 10px auto;
+    padding-left: 123px;
+    margin-bottom: 55px;
+}
+.list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(214, 214, 214, 0.696);
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 5px;
+    margin-right: 140px;
+    font-size: 10px;
+    color: #625151;
+}
+
+.list li::before{
+    content: "";
+    position: absolute;
+    top: 45px;
+    bottom: 59px;
+    left: -140px;
+    width: 140px;
+    height: 2px;
+    background-color: rgb(176 176 159 / 66%);
+}
+
+.list li i{
+    font-size: 25px;
+}
+
+.list li:first-child{
+    background-color: rgba(248, 198, 123, 0.799);
+}
+.list li:first-child::before{
+    content: none;
+}
+
+
+/* 購物車明細 */
+#out{
+    display: flex;
+    margin: 65px auto;
+    max-width: 1280px;
+    flex-direction: column;
+    align-items: center;
+}
+.shop{
+    display: block;
+    background-color: rgb(215 212 175 / 23%);
+    width: 1100px;
+    height: 290px;
+    border: 1px solid rgb(180 164 164 / 13%);
+}
+
+.item_header{
+    display: flex;
+    height: 30px;
+    background-color: rgb(246 246 233 / 96%);
+    padding-left: -28px;
+    box-shadow: none;
+    box-shadow: 0 0 0 1px rgb(220 218 218 / 59%);
+}
+
+
+.item_header li{
+    width: 236px;
+    color: #888;
+    line-height: 33px;
+    padding-bottom: 10px;
+    margin-left: 36px;
+}
+
+
+/* 中間購物欄 */
+.item_body li{
+    font-size: 5px;
+    padding-bottom: 5px;  
+    padding-left: 13px;  
+    margin-right: -79px;
+}
+
+.item_body img{
+    width: 80px;
+    border-radius: 3px;
+    margin-top: -10px;
+}
+
+.item_body h3{
+    font-size: 5px;
+}
+.item_body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    border-bottom: 1px solid #80808026;
+}
+
+input{
+    width: 130px;
+    height: 15px;
+    text-align: center;
+}
+i.fa.fa-plus {
+    margin-left: -162px;
+    font-size: 5px;
+}
+i.fa.fa-minus {
+    margin-right: -159px;
+    padding-left: 78px;
+    font-size: 5px;
+}
+
+i.fa.fa-times-rectangle {
+    padding-right: 12px;
+}
+
+.item_body .count{
+    padding-left: 10px;
+}
+.item_body .count2{
+margin-right: -86px;
+}
+
+/* 會員登入 */
+.login{
+    display: flex;
+    width: 1100px;
+    height: 100px;
+    border: 1px solid rgb(208 202 202 / 31%);
+    box-shadow: 0 0 0 5px white;
+    margin-top: 40px;
+}
+
+.login ul{
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.log{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.log ol input {
+    width: 256px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    margin-top: -8px;
+}
+.log ol input:hover{
+    opacity: 0.8;
+}
+.log ol{
+    margin-right: 5px;
+}
+input.cik{
+    background-color: green;
+}
+input.facebook{
+    background-color: blue;
+}
+.login ul li{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(45 36 36 / 74%);
+    margin-top: 35px;
+    margin-left: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 會員資料區 */
+.check{
+    width: 1102px;
+    height: auto;
+    display: flex;
+    margin-top: 29px;
+    padding-bottom: 15px;
+}
+
+.check .data{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226 225 211 / 23%);
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(219 205 205 / 50%);
+}
+
+.check span{
+    font-size: 18px;
+    color: #888;
+    padding-top: 14px;
+}
+
+.data input{
+    font-size: 20px;
+    text-align: left;
+    width: 90%;
+    height: 32px;
+    padding-left: 5px;
+}
+
+.data textarea{
+    width: 90%;
+    margin-top: 3px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/* 右結帳區 */
+.title{
+    width: 35%;
+    margin-left: 139px;
+}
+.title .ins{
+    padding-bottom: 10px;
+    border: 1px solid rgb(219 205 205 / 50%);
+}
+
+.dip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.title li{
+    text-align: right;
+    line-height: 2;
+}
+.free{
+    margin-top: 55px;
+    font-size: 10px;
+    padding-right: 17px;
+}
+.title input{
+    width: 92%;
+    height: 46px;
+    margin-right: 14px;
+    margin-top: 5px;
+    font-size: 20px;
+    background-color: #7b4805d1;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+.title li input:hover{
+    background-color: #e6c396d1;
+}
+li.much{
+    background-color: rgb(136 136 136 / 8%);
+    width: 386px;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0 0 0 / 62%);
+}
+
+
+/* 尾 */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(102, 102, 167, 0.954);
+    color: white;
+    text-align: center;
+    margin-top: 225px;
+    font-size: 15px;
+    
+}
+footer  p{
+    flex-shrink: 0;
+    padding-top: 14px;
+    box-sizing: border-box;
+   }
+
