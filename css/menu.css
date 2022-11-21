@@ -1,14 +1,15 @@
 @import url('reset.css');
 
 body{
-    font-family: 'Philosopher', sans-serif;
     font-family: 'Noto Serif TC', serif;
+    font-family: 'Philosopher', sans-serif;
     display: block;
     margin:0 auto;
     height: 100%;
     line-height: 1.5;
-    max-width: 100%;
-    }
+    max-width:100%;
+    background-color: #ffffff;
+}
 
 
 /* 頭 */
@@ -16,7 +17,9 @@ body{
     height: 210px;
     background-color: rgba(102, 102, 167, 0.954);
 }
-
+.top i{
+    display: none;
+}
 .top ul{
     display: flex;
     justify-content: space-around;
@@ -33,9 +36,6 @@ body{
 
 }
 
-.top i{
-    display: none;
-}
 .top li{
     flex-shrink: 0;
     font-weight: 20px;
@@ -63,7 +63,22 @@ body{
     left: -7px;
     border-radius: 18px;
 }
-
+/* 尾 */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    background-color: rgba(102, 102, 167, 0.954);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    
+}
+footer > p{
+    flex-shrink: 0;
+    padding-top: 14px;
+    box-sizing: border-box;
+   }
 /*選單 */
 .menu{
     display: block;
@@ -128,33 +143,4 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* 尾 */
-footer{
-    display: flex;
-    flex-direction: column;
-    height: 80px;
-    background-color: rgba(102, 102, 167, 0.954);
-    color: white;
-    text-align: center;
-    margin-top: 93px;
-    font-size: 15px;
-    
-}
-footer  p{
-    flex-shrink: 0;
-    padding-top: 14px;
-    box-sizing: border-box;
-   }
 

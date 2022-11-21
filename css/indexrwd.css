@@ -1,7 +1,10 @@
 @media screen and (max-width:414px){
     
+
+
 body{
     background-color: white;
+    /* color: red; */
 }
 
 .top{
@@ -24,9 +27,9 @@ body{
     margin-left: 17px;
 }
 
-.top i:hover ~ ul{
+/* .top i:hover ~ ul{
     transform: translateX(0px);
-}
+} */
 .top ul{
         display: block;
         background-color: rgb(6, 77, 139);
@@ -83,11 +86,11 @@ body{
 }
 
 h1{
-    font-size: 20px;
+    font-size: 23px;
     color: #556085;
 }
 h2{
-    font-size: 5px;
+    font-size: 10px;
     color: #737070;
 }
 /* 輪播圖  */
@@ -199,6 +202,7 @@ footer{
 
 footer > p {
     padding-top: 0px;
+    font-size: 10px;
 }
 
 

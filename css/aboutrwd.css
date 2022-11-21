@@ -1,0 +1,111 @@
+@media screen and (max-width:414px){
+    
+body{
+    background-color: white;
+    /* background-color: red; */
+    /* color: red; */
+    }
+    
+.top{
+    background-color: #fff;
+    }
+    
+.top img {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    margin-top: 5px;
+    }
+    
+    
+.top i{
+    display: block;
+    margin-top: -41px;
+    font-size: 20px;
+    width: 30px;
+    margin-left: 17px;
+    }
+    
+    /* .top i:hover ~ ul{
+        transform: translateX(0px);
+    } */
+.top ul{
+    display: block;
+    background-color: rgb(6, 77, 139);
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    padding-left: 0;
+    z-index: 999;
+    transform: translateX(-414px);
+    }
+.top ul li{
+    display: block;
+    width: 100%;
+    }
+.top ul li:hover{
+    border-bottom: 2px solid white;
+    color: black;
+    display: block;
+    width: 100%;
+    opacity: 0.5;
+    }
+.top li{
+    text-align: center;
+    flex-basis: 100px;
+    }
+.top li a{
+    position: static;
+    line-height: 106px;
+    text-indent: 15px;
+    margin-left: 18px;
+    }
+    
+.circle{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-top: 9px;
+    }
+    
+.circle a{
+    margin-right: 5px;
+    font-size: 22px;
+    color: rgb 6 77 139;
+    color: rgb(6 77 139);
+    }
+    /* 尾 */
+footer{
+    height: 100px;
+    font-size: 10px;
+    padding: 0 5px;
+    padding-top: 14px;
+    }
+
+footer > p {
+    padding-top: 0px;
+    font-size: 10px;
+    }
+
+
+/* about */
+header{
+    height: 60px;
+}
+.about{
+    width: 100%;
+}
+.about img:first-child{
+    width: 400px;
+}
+img.dream{
+    height: 45px;
+    width: 400px;
+}
+.about h1 {
+    margin: 38px 50px;
+    line-height: 2;
+}
+}
