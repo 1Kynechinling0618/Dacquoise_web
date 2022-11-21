@@ -80,6 +80,26 @@ footer > p{
     box-sizing: border-box;
    }
 /*選單 */
+.menu.new{
+    display: none;
+}
+.menu h1{
+    display: block;
+    font-size: 29px;
+    font-weight: bold;
+    color: #556085;
+    border-bottom: 2px solid;
+    text-align: center;
+    margin: 106px 220px 0px 220px;
+}
+.menu ul.new {
+    display: flex;
+    justify-content: space-evenly;
+}
+a.car img {
+    display: none;
+    width: 20px;
+}
 .menu{
     display: block;
     margin: 0 auto;
@@ -95,6 +115,7 @@ footer > p{
 }
 
 .menu li{
+    overflow: hidden;
     margin-top: 108px;
     padding: 30px;
     border: 1px solid rgb(217 213 213 / 50%);

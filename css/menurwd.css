@@ -91,26 +91,60 @@
         }
 
         /*選單 */
+    .menu.new{
+        display: block;
+    }
+    .menu.new.cha{
+        width: 220px;
+        height: 210px;
+        overflow: hidden;
+    }
+    .menu h1{
+        display: block;
+        font-size: 29px;
+        font-weight: bold;
+        color: #556085;
+        border-bottom: 2px solid;
+        text-align: center;
+        margin: 23px 30px 10px 30px;
+    }
+    
+    a.car img {
+        display: block;
+        width: 35px;
+        position: absolute;
+        bottom: 71px;
+        left: 12px;
+        }
     .menu{
         width: 100%;
         }
     .menu li {
         margin-left: 18px;
         width: 186px;
-        margin-top: 0px;
+        margin-top: 15px;
         padding: 0;
         border: none;
         box-shadow: none;
+        position: relative;
     }
     .menu img {
         width: 178px;
     }
     .menu input{
-        width: 174px;
+       display: none;
     }
+    .menu p {
+        color: rgb(139 77 6);
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
     .menu ul{
-        j
+        
     }
+
 
 
 
