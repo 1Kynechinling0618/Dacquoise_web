@@ -10,7 +10,9 @@
     .top{
         background-color: #fff;
     }
-    
+    header {
+        height: 100px;
+    }
     .top img {
         display: block;
         margin: 0 auto;
@@ -83,4 +85,51 @@
         color: rgb(6 77 139);
     }
 
+    /* 尾 */
+    footer{
+        height: auto;
+        font-size: 10px;
+        padding: 0 5px;
+        padding-top: 14px;
+    }
+
+    footer > p {
+        padding-top: 0px;
+        font-size: 10px;
+    }
+    /* address */
+    .address{
+        width: 100%;
+        height: 385px;
+    }
+    .address ul li {
+        width: 100%;
+        height: 265px;
+    }
+    .left_jiantou , .right_jiantou{
+        top: 90px;
+    }
+    .stone{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .stone iframe {
+        width: auto;
+    }
+    .stone li {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
 }
+
+
