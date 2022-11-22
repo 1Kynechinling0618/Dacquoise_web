@@ -131,7 +131,7 @@ footer > p {
 
 /* 中間購物欄 */
 .item_body {
-    
+    justify-content: space-around;
 }
 .item_body li{
     margin-right: 0px;
