@@ -177,8 +177,8 @@ footer > p{
     margin-top: -10px;
 }
 
-.item_body h3{
-    font-size: 5px;
+.item_body p{
+    font-size: 10px;
 }
 .item_body{
     display: flex;
