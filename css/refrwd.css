@@ -111,6 +111,8 @@
     }
     .detail{
         padding: 0px;
+        padding: 17px;
+}
     }
     ul.detail {
         width: auto;
