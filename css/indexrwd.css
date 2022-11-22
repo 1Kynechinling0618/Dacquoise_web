@@ -47,12 +47,15 @@ body{
     display: block;
     width: 100%;
 }
-.top ul li:hover{
+.top li:hover{
     border-bottom: 2px solid white;
     color: black;
     display: block;
     width: 100%;
     opacity: 0.5;
+}
+.top ul a:hover:after {
+    display: none;
 }
 .top li{
     text-align: center;
@@ -73,6 +76,7 @@ body{
 }
 
 .circle a{
+    text-decoration: none;
     margin-right: 5px;
     font-size: 22px;
     color: rgb 6 77 139;

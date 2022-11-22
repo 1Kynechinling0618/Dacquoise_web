@@ -51,6 +51,9 @@ header{
     width: 100%;
     opacity: 0.5;
     }
+.top ul a:hover:after {
+    display: none;
+    }
 .top li{
     text-align: center;
     flex-basis: 100px;
@@ -63,6 +66,7 @@ header{
     }
         
 .circle{
+    text-decoration: none;
     display: flex;
     width: 100%;
     flex-direction: row-reverse;

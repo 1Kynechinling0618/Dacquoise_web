@@ -53,6 +53,9 @@
         width: 100%;
         opacity: 0.5;
         }
+    .top ul a:hover:after {
+        display: none;
+        }
     .top li{
         text-align: center;
         flex-basis: 100px;
@@ -72,6 +75,7 @@
         }
         
     .circle a{
+        text-decoration: none;
         margin-right: 5px;
         font-size: 22px;
         color: rgb 6 77 139;
