@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>絕對定位回到頂部按鈕</title>
+<style type="text/css">
+body{margin:0px;padding:0px;height:2500px;background:#6f0024;}
+#div1{width:120px;height:34px;right:4px;bottom:5px;cursor:pointer;background:url(images/ToTop.png) no-repeat;position:fixed;_position:absolute;display:none;}
+</style>
+<script type="text/javascript">
+//絕對定位隱藏顯示
+function getScroll(id){
+ var obj = document.getElementById(id);
+ var timer = null;
+ positionFixed(obj);
+ if(obj){
+ obj.style.display = 'none';
+ window.onscroll=function(){
+  getScrollTop() > 0 ? obj.style.display = "block" : obj.style.display = "none";
+ }
+ obj.onclick=function(){
+  var timer = setInterval(sMove,10);
+  function sMove(){
+  setScrollTop(getScrollTop() / 1.5);
+  if(getScrollTop() < 1)clearInterval(timer);
+  }
+ }
+ }
+}
+//判斷IE6
+function positionFixed(obj){
+ var iE6 = !-[1,] && !window.XMLHttpRequest;
+ if(obj){
+     var top = obj.offsetTop;
+ if(iE6){
+  document.documentElement.style.textOverflow = "ellipsis";
+  obj.style.position = "absolute";
+  obj.style.setExpression("top", "eval(documentElement.scrollTop + " + top + ') + "px"');
+ }
+ }
+}
+//獲取滾動條Top
+function getScrollTop(){
+ return document.documentElement.scrollTop || document.body.scrollTop;
+}
+//回到頂部
+function setScrollTop(value){
+ document.documentElement.scrollTop = value;
+ document.body.scrollTop = value;
+}
+window.onload = function(){
+ getScroll('div1');
+};
+</script>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>

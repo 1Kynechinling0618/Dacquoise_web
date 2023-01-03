@@ -16,3 +16,5 @@ menuBtn.addEventListener('click',function(){
     if(sta===0) sta=1;
     else if(sta===1) sta=0;
 })
+
+
