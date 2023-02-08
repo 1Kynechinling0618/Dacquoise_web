@@ -15,10 +15,9 @@ body{
 /* 頭 */
 #button {
     display: inline-block;
-    background-color: blue;
-      ;
+    background-color: rgb(255 255 255 / 50%);
     width: 50px;
-    height: 50px;
+    height: 40px;
     text-align: center;
     border-radius: 4px;
     position: fixed;
@@ -29,8 +28,9 @@ body{
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+    padding-top: 6px;
   }
-  #button::after {
+  /* #button::after {
     content: "\f077";
     font-family: FontAwesome;
     font-weight: normal;
@@ -38,7 +38,12 @@ body{
     font-size: 2em;
     line-height: 50px;
     color: #fff;
-  }
+  } */
+  i.bi.bi-chevron-double-down {
+    width: 10p;
+    font-size: 25px;
+    color: white;
+}
   #button:hover {
     cursor: pointer;
     background-color: #333;
